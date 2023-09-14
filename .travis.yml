@@ -2,8 +2,9 @@ language: node_js
 node_js: 
   - 14
 script:
-  - "npm run build"
-  - "npm run test:nowatch"
+  - npm install
+  - npm run build
+  - npm run test:nowatch
 
 deploy:
   provider: heroku
