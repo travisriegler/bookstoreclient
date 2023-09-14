@@ -3,6 +3,7 @@ node_js:
   - 16
 script:
   - npm run build
+  - "npm run test:nowatch"
 
 deploy:
   provider: heroku
