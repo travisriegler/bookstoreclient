@@ -2,7 +2,7 @@ language: node_js
 node_js: 
   - 14
 script:
-  - npm install
+  - npm install || (cat /home/travis/.npm/_logs/*.log && false)
   - npm run build
   - npm run test:nowatch
 
