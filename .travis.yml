@@ -1,6 +1,6 @@
 language: node_js
 node_js: 
-  - 14
+  - 18
 script:
   - npm install || (cat /home/travis/.npm/_logs/*.log && false)
   - npm run build
