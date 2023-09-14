@@ -1,0 +1,20 @@
+language: node_js
+node_js: 
+  - 13.1.0
+script:
+  - "npm run build"
+  - "npm run test:nowatch"
+
+deploy:
+  provider: heroku
+  api_key: $HEROKU_TOKEN
+  app: "book-store-web99"
+  on:
+    branch: main
+cache:
+  directories:
+    - $HOME/.npm
+before_install:
+  - rm -rf $HOME/.npm/
+after_failure:
+  - cat /home/travis/.npm/_logs/*.log
