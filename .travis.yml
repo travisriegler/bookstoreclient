@@ -16,6 +16,6 @@ cache:
     - $HOME/.npm
 before_install:
   - rm -rf $HOME/.npm/
-after_failure:
-  - ls /home/travis/.npm/_logs/
-  - cat /home/travis/.npm/_logs/*.log || echo "Could not read logs."
+env:
+  global:
+    - DEBUG=true
