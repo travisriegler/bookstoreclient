@@ -17,8 +17,8 @@
     "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test:nowatch": "set CI=true&& react-scripts test --coverage",
+    "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!axios)/'",
+    "test:nowatch": "set CI=true&& react-scripts test --coverage --transformIgnorePatterns 'node_modules/(?!axios)/'",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
