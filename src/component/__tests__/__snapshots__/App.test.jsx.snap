@@ -37,14 +37,22 @@ exports[`App component Should render app without error 1`] = `
             Book Filter
           </div>
         </div>
-        <span
-          class="MuiSkeleton-root MuiSkeleton-react MuiSkeleton-pulse css-153n0d3-MuiSkeleton-root"
-          data-testid="book-loader"
-          style="width: 80%; height: 200px;"
-        />
         <div
           class="MuiBox-root css-jsaqyr"
-        />
+        >
+          <div
+            class="MuiBox-root css-19t1w01"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-pulse css-153n0d3-MuiSkeleton-root"
+              data-testid="book-loader"
+              style="width: 80%; height: 200px;"
+            />
+          </div>
+          <div
+            class="MuiBox-root css-jsaqyr"
+          />
+        </div>
       </div>
     </div>
   </div>
