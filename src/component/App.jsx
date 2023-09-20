@@ -1,6 +1,8 @@
 import axios from 'axios';
-import baseUrl from './config'
+import baseUrl from '../config';
 import React, { useEffect } from 'react';
+import Layout from './layout/Layout';
+import BookContainer from './book/BookContainer';
 
 const App = () => {
 
@@ -14,7 +16,11 @@ const App = () => {
       });
   }, []);
 
-  return <div>My first component</div>
+  return (
+    <Layout>
+      <BookContainer />
+    </Layout>
+  )
 }
 
 export default App;

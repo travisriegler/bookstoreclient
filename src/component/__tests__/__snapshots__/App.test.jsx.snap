@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component Should render app without error 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-0"
+  >
+    <div
+      class="MuiBox-root css-0"
+    >
+      <header
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-11b3ww9-MuiPaper-root-MuiAppBar-root"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-1qp5wg9-MuiTypography-root"
+          >
+            Book Store
+          </h6>
+        </div>
+      </header>
+    </div>
+    <div
+      class="MuiBox-root css-1afphko"
+    >
+      <div
+        class="MuiBox-root css-m46jwb"
+      >
+        <div
+          class="MuiBox-root css-1jjlxh2"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-14ykses-MuiPaper-root"
+          >
+            Book Filter
+          </div>
+        </div>
+        <span
+          class="MuiSkeleton-root MuiSkeleton-react MuiSkeleton-pulse css-153n0d3-MuiSkeleton-root"
+          data-testid="book-loader"
+          style="width: 80%; height: 200px;"
+        />
+        <div
+          class="MuiBox-root css-jsaqyr"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
