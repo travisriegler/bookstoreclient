@@ -4,7 +4,8 @@ import { Paper } from '@mui/material';
 const StyledBookFilterPaper = styled(Paper)({
     
     width: '100%',
-    height: '100%'
+    height: '100%',
+    textAlign: 'center'
 
 });
 

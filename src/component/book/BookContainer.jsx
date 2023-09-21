@@ -2,7 +2,7 @@ import BookFilter from "./BookFilter";
 import StyledBookContainer from "./StyledBookContainer"
 import { useDispatch, useSelector } from "react-redux";
 import { getBooksSelector, getBookPromiseSelector } from "../../module/book/bookSelector";
-import getBooksAction from '../../module/book/bookAction'
+import { getBooksAction } from '../../module/book/bookAction'
 import { useEffect } from "react";
 import BookList from "./BookList";
 import { Skeleton, Box } from "@mui/material";

@@ -10,6 +10,7 @@ export const INITIAL_BOOK_REDUCER_STATE = {
 
 const bookReducer = (state = INITIAL_BOOK_REDUCER_STATE, action) => {
     switch(action.type) {
+        case 'BOOKSBYTITLE':
         case 'BOOKLIST': {
             return {
                 ...state,
