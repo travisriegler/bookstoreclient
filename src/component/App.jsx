@@ -1,25 +1,27 @@
-import axios from 'axios';
-import baseUrl from '../config';
-import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './layout/Layout';
 import BookContainer from './book/BookContainer';
+import Login from './user/Login';
+import { SnackbarProvider } from 'notistack'
+import Auth from './auth';
 
 const App = () => {
 
-  useEffect(() => {
-    axios(`${baseUrl}/api/v1/books`)
-      .then((response) => {
-        //console.log(response.data);
-      })
-      .catch((error) => {
-        //console.error(error);
-      });
-  }, []);
-
   return (
-    <Layout>
-      <BookContainer />
-    </Layout>
+    <SnackbarProvider maxSnack={3}>
+      <Router>
+          <Layout>
+            <Routes>
+                <Route path="/login" element={<Login />} />
+                <Route path="/" element={
+                  <Auth>
+                      <BookContainer />
+                  </Auth>
+                } />
+            </Routes>
+          </Layout> 
+      </Router>
+    </SnackbarProvider>
   )
 }
 

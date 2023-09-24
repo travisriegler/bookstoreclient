@@ -4,6 +4,8 @@ import { Provider } from "react-redux";
 import { render } from "@testing-library/react";
 import reduxThunk from 'redux-thunk';
 import reducers from '../module';
+import { SnackbarProvider } from 'notistack'
+import { MemoryRouter } from "react-router-dom";
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 
@@ -11,12 +13,27 @@ const renderWithRedux = (
         ui,
         {
             initialState,
-            store = createStoreWithMiddleware(reducers, initialState)
+            store = createStoreWithMiddleware(reducers, initialState),
+            useMemoryRouter = false
         }
     ) => ({
         ...render(
+            
             <Provider store={store}>
-                {ui}
+                {useMemoryRouter
+                    ? (
+                        <MemoryRouter>
+                            <SnackbarProvider maxSnack={3}>
+                                    {ui}
+                            </SnackbarProvider>
+                        </MemoryRouter>
+                    )
+                    : (
+                        <SnackbarProvider maxSnack={3}>
+                                {ui}
+                        </SnackbarProvider>
+                    )
+                }
             </Provider>
         )
 

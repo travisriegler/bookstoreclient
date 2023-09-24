@@ -25,90 +25,111 @@ exports[`App component Should render app without error 1`] = `
     <div
       class="MuiBox-root css-1afphko"
     >
-      <div
-        class="MuiBox-root css-m46jwb"
+      <form
+        autocomplete="off"
+        novalidate=""
       >
         <div
-          class="MuiBox-root css-1jjlxh2"
+          class="MuiBox-root css-1wcjc1k"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-r4vocr-MuiPaper-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-tjzra3-MuiPaper-root"
           >
-            <p
-              class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            <h4
+              class="MuiTypography-root MuiTypography-h4 css-5lbw0b-MuiTypography-root"
             >
-              Search Book Filters
-            </p>
+              Book Store Login
+            </h4>
             <div
-              class="MuiBox-root css-13z6t8q"
+              class="MuiFormControl-root MuiTextField-root css-7xtz12-MuiFormControl-root-MuiTextField-root"
+              data-testid="email-testid"
             >
-              <div
-                class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
-                data-testid="book-title-input"
+              <label
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
+                data-shrink="false"
+                for="email"
+                id="email-label"
               >
-                <label
-                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
-                  data-shrink="false"
-                  for="book-search"
-                  id="book-search-label"
+                Enter email address
+              </label>
+              <div
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+              >
+                <input
+                  aria-invalid="false"
+                  class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                  id="email"
+                  name="email"
+                  placeholder="Enter email address"
+                  type="text"
+                  value=""
+                />
+                <fieldset
+                  aria-hidden="true"
+                  class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                 >
-                  Enter book title
-                </label>
-                <div
-                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
-                >
-                  <input
-                    aria-invalid="false"
-                    class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id="book-search"
-                    placeholder="Enter book title"
-                    type="text"
-                    value=""
-                  />
-                  <fieldset
-                    aria-hidden="true"
-                    class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                  <legend
+                    class="css-yjsfm1"
                   >
-                    <legend
-                      class="css-yjsfm1"
-                    >
-                      <span>
-                        Enter book title
-                      </span>
-                    </legend>
-                  </fieldset>
-                </div>
+                    <span>
+                      Enter email address
+                    </span>
+                  </legend>
+                </fieldset>
+              </div>
+            </div>
+            <div
+              class="MuiFormControl-root MuiTextField-root css-7xtz12-MuiFormControl-root-MuiTextField-root"
+              data-testid="password-testid"
+            >
+              <label
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
+                data-shrink="false"
+                for="password"
+                id="password-label"
+              >
+                Enter password
+              </label>
+              <div
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+              >
+                <input
+                  aria-invalid="false"
+                  class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                  id="password"
+                  name="password"
+                  placeholder="Enter password"
+                  type="password"
+                  value=""
+                />
+                <fieldset
+                  aria-hidden="true"
+                  class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                >
+                  <legend
+                    class="css-yjsfm1"
+                  >
+                    <span>
+                      Enter password
+                    </span>
+                  </legend>
+                </fieldset>
               </div>
             </div>
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-sghohy-MuiButtonBase-root-MuiButton-root"
+              style="margin-top: 2rem;"
               tabindex="0"
-              type="button"
+              type="submit"
             >
-              Search
+              Login
               <span
                 class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
               />
             </button>
           </div>
         </div>
-        <div
-          class="MuiBox-root css-jsaqyr"
-        >
-          <div
-            class="MuiBox-root css-19t1w01"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-pulse css-153n0d3-MuiSkeleton-root"
-              data-testid="book-loader"
-              style="width: 80%; height: 200px;"
-            />
-          </div>
-          <div
-            class="MuiBox-root css-jsaqyr"
-          />
-        </div>
-      </div>
+      </form>
     </div>
   </div>
 </DocumentFragment>

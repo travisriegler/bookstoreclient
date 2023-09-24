@@ -7,7 +7,7 @@ import { getBooksByTitle } from "../../module/book/bookAction";
 
 const BookFilter = () => {
 
-    const [searchText, setSearchText] = useState();
+    const [searchText, setSearchText] = useState("");
     const dispatch = useDispatch();
 
     const handleSearchChange = (event) => {
