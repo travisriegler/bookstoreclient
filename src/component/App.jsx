@@ -4,6 +4,7 @@ import BookContainer from './book/BookContainer';
 import Login from './user/Login';
 import { SnackbarProvider } from 'notistack'
 import Auth from './auth';
+import Register from './user/Register';
 
 const App = () => {
 
@@ -13,6 +14,7 @@ const App = () => {
           <Layout>
             <Routes>
                 <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
                 <Route path="/" element={
                   <Auth>
                       <BookContainer />

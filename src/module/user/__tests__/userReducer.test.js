@@ -12,12 +12,8 @@ describe('userReducer', () => {
         const newState = userReducer(USER_INITIAL_STATE, action);
 
         expect(newState).toEqual({
-            token: 'jwt token',
-            promise: {
-                isErrorOcurred: false,
-                isFulfilled: false,
-                isPending: false,
-            }
+            ...USER_INITIAL_STATE,
+            token: 'jwt token'
         })
     })
 

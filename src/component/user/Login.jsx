@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material";
+import { Button, Typography, Link } from "@mui/material";
 import StyledWrapper from "./StyledWrapper";
 import StyledPaper from "./StyledPaper";
 import StyledTopMargin from "./StyledTopMargin";
@@ -38,15 +38,16 @@ const Login = () => {
     }, [loginPromise, enqueueSnackbar, navigate])
 
     const formik = useFormik({
-        initialValues: {
-            email: '',
-            password: ''
-        },
+        initialValues: { email: '', password: '' },
         validationSchema,
         onSubmit: (values) => {
             dispatch(loginAction(values.email, values.password))
         }
     })
+
+    const handleRegister = () => {
+        navigate('/register');
+    };
 
     return (
         <form autoComplete="off" noValidate onSubmit={formik.handleSubmit}>
@@ -81,6 +82,8 @@ const Login = () => {
                     <Button type="submit" variant="contained" color="primary" style={{marginTop: '2rem'}} disabled={loginPromise.isPending}>
                         Login
                     </Button>
+                    <br />
+                    <Link component="button" variant="body2" onClick={handleRegister}>Register</Link>
                 </StyledPaper>
             </StyledWrapper>
         </form>

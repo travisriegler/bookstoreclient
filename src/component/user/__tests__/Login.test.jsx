@@ -2,7 +2,6 @@ import renderWithRedux from "../../../util/testUtil";
 import Login from '../Login';
 import { act, fireEvent, waitFor } from "@testing-library/react";
 import { loginAction } from "../../../module/user/userAction";
-import { MemoryRouter } from "react-router-dom";
 
 jest.mock("../../../module/user/userAction")
 describe('Login test', () => {
